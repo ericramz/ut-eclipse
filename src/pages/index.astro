@@ -6,25 +6,25 @@ import Layout from '../components/Layout.astro';
 <Layout title="UT Total Solor Eclipse">
 	<main>
     <div id="content">
+      <div class="text-center">
        <div class="font-bold text-charcoal uppercase sm:text-3xl text-xl pt-6">SAVE THE DATE!</div>
         <h1 class="font-sans text-white uppercase font-bold"><span class="font-extrabold">UT</span>otal Solar Eclipse</h1>
         <div class="font-bold text-center text-charcoal text-xl px-2 pb-6">Monday, April 8, 2024 • University of Texas at Austin Campus<br> More information coming soon</div>
         <div class="font-bold text-white uppercase text-xl sm:text-3xl pb-6">COUNTDOWN TO TOTALITY</div>
-        <div class="font-sans font-extrabold text-charcoal text-6xl" id="countdown"></div>
-        <div class="bevo md:-mt-24 mx-2 relative md:-mb-[64px]">
+        <div class="font-sans font-extrabold text-charcoal text-3xl sm:text-6xl" id="countdown"></div>
+        <div class="bevo md:-mt-24 mx-2 relative lg:-mb-[64px]">
           <div class="relative">
             <img src="/images/Bevo.svg" alt="UT Bevo" class="brightness-bevo">
-              <div class="hidden md:block md:absolute top-[234px] left-[282px]">
+              <div class="hidden lg:block lg:absolute top-[234px] left-[282px]">
                 <img src="/images/bevo-glasses.png" alt="UT Bevo" class="brightness w-60 mx-auto -mb-10">
               </div>
-                
-                <div class="overflow-hidden w-[2rem] h-[2rem] hidden md:block">
+                <div class="overflow-hidden w-[2rem] h-[2rem] hidden lg:block">
                   <div id="star1">
                     <div id="planet1">
                     </div>
                   </div>
                 </div>
-                <div class="overflow-hidden w-[2rem] h-[2rem] hidden md:block">
+                <div class="overflow-hidden w-[2rem] h-[2rem] hidden lg:block">
                   <div id="star2">
                     <div id="planet2">
                     </div>
@@ -47,7 +47,7 @@ import Layout from '../components/Layout.astro';
     50% { filter: brightness(25%); }
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     
     .brightness-bevo {
     animation: brightness-bevo 25s infinite;
