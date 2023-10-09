@@ -11,9 +11,99 @@ import Layout from '../components/Layout.astro';
         <h1 class="text-3xl font-bold underline mb-10">Hello world - testing!</h1>
         <h2 class="font-sans font-bold uppercase text-4xl">Countdown to Totality</h2>
         <div class="font-sans font-extrabold text-charcoal text-6xl" id="countdown"></div>
-        <div class="bevo md:-mt-24 mx-2">
-          <img src="/images/Bevo.svg" alt="UT Bevo">
+        <div class="bevo md:-mt-24 mx-2 relative">
+            <img src="/images/Bevo.svg" alt="UT Bevo">
+            <div class="overflow-hidden w-[2rem] h-[2rem]">
+              <div id="star1">
+                <div id="planet1">
+                </div>
+              </div>
+            </div>
+            <div class="overflow-hidden w-[2rem] h-[2rem]">
+              <div id="star2">
+                <div id="planet2">
+                </div>
+              </div>
+            </div>
+          
         </div>
     </div>
+  </div>
 	</main>
 </Layout>
+
+<style>
+  #star1 {
+  position: absolute;
+  left: 41.25%;
+  top: 34.75%;
+  width: 41px;
+  height: 41px;
+  transform: translate(-50%, -50%);
+  shape-outside: ellipse(50% 40%);
+  clip-path: ellipse(50% 40%);
+  background: #DBE6E0;
+
+}
+
+#planet1 {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+  shape-outside: ellipse(50% 40%);
+  clip-path: ellipse(50% 40%);
+  background: #010101;
+  background-image: url("/images/dots.png");
+  background-size: contain;
+  box-shadow: inset 0 0 50px rgba(150, 150, 150, 0.2);
+  animation: eclipse 10s infinite linear;
+  transform-origin: 50% 150%;
+  transform: rotate(-60deg);
+}
+#star2 {
+  position: absolute;
+  left: 59.75%;
+  top: 34.5%;
+  width: 41px;
+  height: 41px;
+  transform: translate(-50%, -50%);
+  shape-outside: ellipse(50% 40%);
+  clip-path: ellipse(50% 40%);
+  background: #DBE6E0;
+
+}
+
+#planet2 {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+  shape-outside: ellipse(50% 40%);
+  clip-path: ellipse(50% 40%);
+  background: #010101;
+  background-image: url("/images/dots.png");
+  background-size: contain;
+  box-shadow: inset 0 0 50px rgba(150, 150, 150, 0.2);
+  animation: eclipse 10s infinite linear;
+  transform-origin: 50% 150%;
+  transform: rotate(-60deg);
+}
+
+@keyframes eclipse {
+  0% {
+   	transform: rotate(-77deg); 
+  }
+  
+  99.9% {
+   	transform: rotate(47deg); 
+  }
+  
+  100%{
+    transform: rotate(300deg);
+  }
+}
+
+  </style>
