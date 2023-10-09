@@ -4,9 +4,11 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-        '1883-Sans': ["'1883-Sans'", 'sans-serif'],
-        'GT-Sectra': ["'GT-Sectra'", 'serif'],
+        		sans: ["'1883-Sans'", 'sans-serif'],
+        		serif: ["'GT-Sectra'", 'serif'],
 		},
 	},
+},
 	plugins: [],
 }
+

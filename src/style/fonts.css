@@ -1,0 +1,84 @@
+@font-face {
+    font-family: '1883-Sans';
+    src: url('font/1883-Sans/1883Sans-Bold.woff') format('woff'),
+      url('font/1883-Sans/1883Sans-Bold.woff2') format('woff2'),
+      url('font/1883-Sans/1883Sans-bold.oft') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: '1883-Sans';
+    src: url('font/1883-Sans/1883Sans-Italic.woff')
+        format('woff'),
+      url('font/1883-Sans/1883Sans-Italic.woff2') format('woff2'),
+      url('font/1883-Sans/1883Sans-Italic.oft')
+        format('opentype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: '1883-Sans';
+    src: url('font/1883-Sans/1883Sans-Regular.woff')
+        format('woff'),
+      url('font/1883-Sans/1883Sans-Regular.woff2')
+        format('woff2'),
+      url('font/1883-Sans/1883Sans-Regular.oft')
+        format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: '1883-Sans';
+    src: url('font/1883-Sans/1883Sans-Medium.woff')
+        format('woff'),
+      url('font/1883-Sans/1883Sans-Medium.woff2') format('woff2'),
+      url('font/1883-Sans/1883Sans-Medium.oft')
+        format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: '1883-Sans';
+    src: url('font/1883-Sans/1883Sans-SemiBold.woff')
+        format('woff'),
+      url('font/1883-Sans/1883Sans-SemiBold.woff2')
+        format('woff2'),
+      url('font/1883-Sans/1883Sans-SemiBold.oft')
+        format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: '1883-Sans';
+    src: url('font/1883-Sans/1883Sans-Black.woff') format('woff'),
+      url('font/1883-Sans/1883Sans-Black.woff2') format('woff2'),
+      url('font/1883-Sans/1883Sans-Black.oft') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'GT-Sectra';
+    src: url('font/gtsectra/GT-Sectra-Regular-italic.eot')
+        format('eot'),
+      url('font/gtsectra/GT-Sectra-Regular-italic.svg')
+        format('svg'),
+      url('font/gtsectra/GT-Sectra-Regular-italic.woff')
+        format('woff'),
+      url('font/gtsectra/GT-Sectra-Regular-italic.ttf')
+        format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'GT-Sectra';
+    src: url('font/gtsectra/GT-Sectra-Regular.eot') format('eot'),
+      url('font/gtsectra/GT-Sectra-Regular.svg') format('svg'),
+      url('font/gtsectra/GT-Sectra-Regular.woff') format('woff'),
+      url('font/gtsectra/GT-Sectra-Regular.ttf')
+        format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
