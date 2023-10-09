@@ -12,7 +12,9 @@ import Layout from '../components/Layout.astro';
         <div class="font-bold text-white uppercase text-xl sm:text-3xl pb-6">COUNTDOWN TO TOTALITY</div>
         <div class="font-sans font-extrabold text-charcoal text-6xl" id="countdown"></div>
         <div class="bevo md:-mt-24 mx-2 relative">
-            <img src="/images/Bevo.svg" alt="UT Bevo" class="brightness">
+            <img src="/images/Bevo.svg" alt="UT Bevo" class="brightness-bevo">
+            <div class="relative">
+            <img src="/images/bevo-glasses.png" alt="UT Bevo" class="brightness w-60 mx-auto -mb-10">
             <div class="overflow-hidden w-[2rem] h-[2rem]">
               <div id="star1">
                 <div id="planet1">
@@ -25,7 +27,7 @@ import Layout from '../components/Layout.astro';
                 </div>
               </div>
             </div>
-          
+          </div>
         </div>
     </div>
   </div>
@@ -34,13 +36,22 @@ import Layout from '../components/Layout.astro';
 
 <style>
   .brightness {
-  animation: brightness 30s infinite;
-}
+  animation: brightness 25s infinite;
+  }
 
-@keyframes brightness {
-  0%, 100%  { filter: brightness(175%); }
-  50% { filter: brightness(25%); }
- }
+  @keyframes brightness {
+    0%, 100%  { filter: brightness(175%); }
+    50% { filter: brightness(25%); }
+  }
+
+  .brightness-bevo {
+  animation: brightness-bevo 25s infinite;
+  }
+
+  @keyframes brightness-bevo {
+    0%, 100%  { filter: brightness(105%); }
+    50% { filter: brightness(75%); }
+  }
 
   #star1 {
   position: absolute;
@@ -67,13 +78,13 @@ import Layout from '../components/Layout.astro';
   background-image: url("/images/dots.png");
   background-size: contain;
   box-shadow: inset 0 0 50px rgba(150, 150, 150, 0.2);
-  animation: eclipse 30s infinite linear;
+  animation: eclipse 25s infinite linear;
   transform-origin: 50% 150%;
   transform: rotate(-60deg);
 }
 #star2 {
   position: absolute;
-  left: 59.75%;
+  left: 59.9%;
   top: 34.5%;
   width: 41px;
   height: 41px;
@@ -96,7 +107,7 @@ import Layout from '../components/Layout.astro';
   background-image: url("/images/dots.png");
   background-size: contain;
   box-shadow: inset 0 0 50px rgba(150, 150, 150, 0.2);
-  animation: eclipse 30s infinite linear;
+  animation: eclipse 25s infinite linear;
   transform-origin: 50% 150%;
   transform: rotate(-60deg);
 }
