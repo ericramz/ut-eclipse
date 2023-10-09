@@ -48,20 +48,6 @@
     font-weight: 900;
     font-style: normal;
   }
-  
-  @font-face {
-    font-family: 'GT-Sectra';
-    src: url('/fonts/gtsectra/GT-Sectra-Regular-italic.eot')
-        format('eot'),
-      url('/fonts/gtsectra/GT-Sectra-Regular-italic.svg')
-        format('svg'),
-      url('/fonts/gtsectra/GT-Sectra-Regular-italic.woff')
-        format('woff'),
-      url('/fonts/gtsectra/GT-Sectra-Regular-italic.ttf')
-        format('truetype');
-    font-weight: normal;
-    font-style: italic;
-  }
   @font-face {
     font-family: 'GT-Sectra';
     src: url('/fonts/gtsectra/GT-Sectra-Regular.eot') format('eot'),
