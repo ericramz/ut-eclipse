@@ -1,0 +1,60 @@
+@font-face {
+    font-family: '1883-Sans';
+    src: url('/fonts/1883-Sans/1883Sans-Bold.woff') format('woff'),
+      url('/fonts/1883-Sans/1883Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: '1883-Sans';
+    src: url('/fonts/1883-Sans/1883Sans-Italic.woff')
+        format('woff'),
+      url('/fonts/1883-Sans/1883Sans-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: '1883-Sans';
+    src: url('/fonts/1883-Sans/1883Sans-Regular.woff')
+        format('woff'),
+      url('/fonts/1883-Sans/1883Sans-Regular.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: '1883-Sans';
+    src: url('/fonts/1883-Sans/1883Sans-Medium.woff')
+        format('woff'),
+      url('/fonts/1883-Sans/1883Sans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: '1883-Sans';
+    src: url('/fonts/1883-Sans/1883Sans-SemiBold.woff')
+        format('woff'),
+      url('/fonts/1883-Sans/1883Sans-SemiBold.woff2')
+        format('woff2');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: '1883-Sans';
+    src: url('/fonts/1883-Sans/1883Sans-Black.woff') format('woff'),
+      url('/fonts/1883-Sans/1883Sans-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'GT-Sectra';
+    src: url('/fonts/gtsectra/GT-Sectra-Regular.eot') format('eot'),
+      url('/fonts/gtsectra/GT-Sectra-Regular.svg') format('svg'),
+      url('/fonts/gtsectra/GT-Sectra-Regular.woff') format('woff'),
+      url('/fonts/gtsectra/GT-Sectra-Regular.ttf')
+        format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
