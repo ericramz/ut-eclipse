@@ -1,5 +1,5 @@
-// Set the target date and time for the countdown
-const targetDate = new Date('April 8, 2024 12:17:14').getTime();
+// Set the target date and time for the countdown using UTC (UTC-5), if Daylight Savings (UTC-6)
+const targetDate = new Date('2024-04-08T19:36:30Z').getTime();
 
 // Function to update the countdown clock
 function updateCountdown() {
