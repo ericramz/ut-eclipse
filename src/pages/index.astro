@@ -13,9 +13,125 @@ import Layout from '../components/Layout.astro';
         <div class="font-bold text-limestone uppercase text-xl sm:text-3xl pb-6">COUNTDOWN TO TOTALITY</div>
         <div class="font-sans font-extrabold text-white text-3xl sm:text-5xl lg:text-6xl" id="countdown"></div>
        </div> 
-        <div class="bevo md:-mt-24 mx-2">
-          <img src="/images/Bevo.svg" alt="Orange and tan cartoon-like Bevo with large horns facing forward wearing solar glasses with an eclipse reflected in them">
-        </div>
+        <div class="bevo md:-mt-24 mx-2 relative lg:-mb-[64px]">
+          <div class="relative">
+            <img src="/images/Bevo.svg" alt="Orange and tan cartoon-like Bevo with large horns facing forward wearing solar glasses with an eclipse reflected in them" class="brightness-bevo">
+              <div class="hidden lg:block lg:absolute top-[234px] left-[282px]">
+                <img src="/images/bevo-glasses.png" alt="UT Bevo glasse" class="brightness w-[251px] mx-auto -mt-[1px] -ml-[4px]">
+              </div>
+                <div class="overflow-hidden w-[2rem] h-[2rem] hidden lg:block">
+                  <div id="star1">
+                    <div id="planet1">
+                    </div>
+                  </div>
+                </div>
+                <div class="overflow-hidden w-[2rem] h-[2rem] hidden lg:block">
+                  <div id="star2">
+                    <div id="planet2">
+                    </div>
+                  </div>
+                </div>
+          </div>
+    </div>
+    </div>
+  </div>
     </div>
 	</main>
 </Layout>
+
+<style>
+  .brightness {
+  animation: brightness 25s infinite;
+  }
+
+  @keyframes brightness {
+    0%, 100%  { filter: brightness(175%); }
+    50% { filter: brightness(25%); }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    
+    .brightness-bevo {
+    animation: brightness-bevo 25s infinite;
+    }
+
+    @keyframes brightness-bevo {
+      0%, 100%  { filter: brightness(105%); }
+      50% { filter: brightness(75%); }
+    }
+  }
+
+  #star1 {
+  position: absolute;
+  left: 41.2%;
+  top: 35%;
+  width: 43px;
+  height: 41px;
+  transform: translate(-50%, -50%);
+  shape-outside: ellipse(50% 40%);
+  clip-path: ellipse(50% 40%);
+  background: #DBE6E0;
+
+}
+
+#planet1 {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  width: 41px;
+  height: 41px;
+  shape-outside: ellipse(50% 40%);
+  clip-path: ellipse(50% 40%);
+  background: #010101;
+  background-image: url("/images/dots.png");
+  background-size: contain;
+  box-shadow: inset 0 0 50px rgba(150, 150, 150, 0.2);
+  animation: eclipse 25s infinite linear;
+  transform-origin: 50% 150%;
+  transform: rotate(-60deg);
+}
+#star2 {
+  position: absolute;
+  left: 59.85%;
+  top: 34.5%;
+  width: 43px;
+  height: 41px;
+  transform: translate(-50%, -50%);
+  shape-outside: ellipse(50% 40%);
+  clip-path: ellipse(50% 40%);
+  background: #DBE6E0;
+
+}
+
+#planet2 {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  width: 41px;
+  height: 41px;
+  shape-outside: ellipse(50% 40%);
+  clip-path: ellipse(50% 40%);
+  background: #010101;
+  background-image: url("/images/dots.png");
+  background-size: contain;
+  box-shadow: inset 0 0 50px rgba(150, 150, 150, 0.2);
+  animation: eclipse 25s infinite linear;
+  transform-origin: 50% 150%;
+  transform: rotate(-60deg);
+}
+
+@keyframes eclipse {
+  0% {
+   	transform: rotate(-77deg); 
+  }
+  
+  99.9% {
+   	transform: rotate(47deg); 
+  }
+  
+  100%{
+    transform: rotate(300deg);
+  }
+}
+
+  </style>
