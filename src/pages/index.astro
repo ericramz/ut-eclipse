@@ -13,9 +13,28 @@ import Layout from '../components/Layout.astro';
         <div class="font-bold text-limestone uppercase text-xl sm:text-3xl pb-6">COUNTDOWN TO TOTALITY</div>
         <div class="font-sans font-extrabold text-white text-3xl sm:text-5xl lg:text-6xl" id="countdown"></div>
        </div> 
-        <div class="bevo md:-mt-24 mx-2">
-          <img src="/images/Bevo.svg" alt="Orange and tan cartoon-like Bevo with large horns facing forward wearing solar glasses with an eclipse reflected in them">
-        </div>
+        <div class="bevo md:-mt-24 mx-2 relative lg:-mb-[64px]">
+          <div class="relative">
+            <img src="/images/Bevo.svg" alt="Orange and tan cartoon-like Bevo with large horns facing forward wearing solar glasses with an eclipse reflected in them" class="brightness-bevo">
+              <div class="hidden lg:block lg:absolute top-[234px] left-[282px]">
+                <img src="/images/bevo-glasses.png" alt="UT Bevo glasse" class="brightness w-[251px] mx-auto -mt-[1px] -ml-[4px]">
+              </div>
+                <div class="overflow-hidden w-[2rem] h-[2rem] hidden lg:block">
+                  <div id="star1">
+                    <div id="planet1">
+                    </div>
+                  </div>
+                </div>
+                <div class="overflow-hidden w-[2rem] h-[2rem] hidden lg:block">
+                  <div id="star2">
+                    <div id="planet2">
+                    </div>
+                  </div>
+                </div>
+          </div>
+    </div>
+    </div>
+  </div>
     </div>
 	</main>
 </Layout>
