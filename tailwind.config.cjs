@@ -16,27 +16,6 @@ module.exports = {
 		  pattern: /^text-/,
 		  variants: ['hover'],
 		},
-		{
-		  pattern: /^bg-/,
-		},
-		{
-		  pattern: /^font-/,
-		},
-		{
-		  pattern: /^leading-/,
-		},
-		{
-		  pattern: /^max-w-/,
-		},
-		{
-		  pattern: /^min-w-/,
-		},
-		{
-		  pattern: /^max-h-/,
-		},
-		{
-		  pattern: /^min-h-/,
-		},
 	  ],
 	theme: {
 		extend: {
