@@ -16,6 +16,7 @@ module.exports = {
 		  pattern: /^text-/,
 		  variants: ['hover'],
 		},
+		'all-small-caps',
 	  ],
 	theme: {
 		extend: {
