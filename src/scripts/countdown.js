@@ -16,7 +16,10 @@ function updateCountdown() {
     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
     // Update the HTML element with the countdown
-    document.getElementById('countdown').innerHTML = `${days}D ${hours}H ${minutes}M ${seconds}S`;
+    document.getElementById('countdown_d').innerHTML = `${days}D`;
+    document.getElementById('countdown_h').innerHTML = `${hours}H`;
+    document.getElementById('countdown_m').innerHTML = `${minutes}M`;
+    document.getElementById('countdown_s').innerHTML = `${seconds}S`;
   }
 }
 
