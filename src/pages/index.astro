@@ -7,38 +7,34 @@ import Layout from '../components/Layout.astro';
 	<main>
     <div id="content">
       <div class="text-center">
-       <div class="font-sans font-bold text-limestone uppercase sm:text-3xl text-xl pt-6">SAVE THE DATE!</div>
-        <h1 class="font-sans text-ut-turquoise-t30 uppercase font-bold px-2"><span class="font-extrabold text-white">UT</span>otal Solar Eclipse</h1>
-        <div class="font-sans font-bold text-center text-white text-xl px-2 pb-6">Monday, April 8, 2024 • University of Texas at Austin Campus<br> More information coming soon</div>
-        <div class="font-sans font-bold text-limestone uppercase text-xl sm:text-3xl pb-6">COUNTDOWN TO TOTALITY</div>
-        <div class="font-sans font-extrabold text-white text-3xl sm:text-5xl lg:text-6xl" id="countdown"></div>
-       </div> 
-        <div class="bevo md:-mt-24 mx-2 relative lg:-mb-[64px]">
-          <div class="relative">
-            <img src="/images/Bevo.svg" alt="Orange and tan cartoon-like Bevo with large horns facing forward wearing solar glasses with an eclipse reflected in them" class="brightness-bevo">
-              <div class="hidden lg:block lg:absolute top-[234px] left-[282px]">
-                <img src="/images/bevo-glasses.png" alt="UT Bevo glasses" class="brightness w-[251px] mx-auto -mt-[1px] -ml-[4px]">
-              </div>
-                <div class="overflow-hidden w-[2rem] h-[2rem] hidden lg:block">
-                  <div id="star1">
-                    <div id="planet1">
-                    </div>
-                  </div>
-                </div>
-                <div class="overflow-hidden w-[2rem] h-[2rem] hidden lg:block">
-                  <div id="star2">
-                    <div id="planet2">
-                    </div>
-                  </div>
-                </div>
-          </div>
-    </div>
-    </div>
-  </div>
+        <div class="mx-auto w-full px-10 md:px-0 sm:w-[32rem] my-10">
+          <img src="/images/UTotalSolarEclipse_1 Line_KO.svg" alt="UTotal Solar Eclipse mark">
+        </div>
+        <div class="mx-auto md:w-[36rem]">
+          <img src="/images/eclipse-lookup-motion.png" alt="Look Up Eclipse" class="w-full">
+        </div>
+        
+        <div class="mx-auto w-48 my-12">
+              <img src="/images/TotalEclipseHorns_Centered_KO.svg" alt="Total Eclipse of the Horns mark">
+        </div>
+        <div class="font-sans font-bold text-center text-white text-xl px-2">MONDAY, APRIL 8</div>
+        <div class="font-sans font-bold text-center text-white text-xl px-2">Locations across the Forty Acres</div>
+        <div class="font-sans italic text-center text-white text-xl px-2 pb-6">More information coming soon</div>
+        <div class="font-sans font-bold text-limestone uppercase text-xl sm:text-3xl">COUNTDOWN TO TOTALITY</div>
+        <div class="sm:columns-4"> 
+          <div class="lg:text-left font-sans font-extrabold text-limestone text-3xl sm:text-5xl lg:text-6xl" id="countdown_d"></div>
+          <div class="lg:text-center font-sans font-extrabold text-limestone text-3xl sm:text-5xl lg:text-6xl" id="countdown_h"></div>
+          <div class="lg:text-center font-sans font-extrabold text-limestone text-3xl sm:text-5xl lg:text-6xl" id="countdown_m"></div>
+          <div class="lg:text-right font-sans font-extrabold text-limestone text-3xl sm:text-5xl lg:text-6xl" id="countdown_s"></div>
+        </div>
+      </div> 
+      <div class="mx-auto w-full -mt-[24vw] sm:-mt-[12vw] md:-mt-[22vw]">
+        <img src="/images/Campus_orange_glow_small.png" alt="UT campus with bevo">
+      </div>
     </div>
 	</main>
 </Layout>
-
+ 
 <style>
   .brightness {
   animation: brightness 25s infinite;

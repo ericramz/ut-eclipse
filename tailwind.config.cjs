@@ -2,6 +2,22 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	safelist: [
+		{
+		  pattern: /^\-?m(\w?)-/,
+		},
+		{
+		  pattern: /^p(\w?)-/,
+		},
+		{
+		  pattern: /^h-/,
+		},
+		{
+		  pattern: /^text-/,
+		  variants: ['hover'],
+		},
+		'all-small-caps',
+	  ],
 	theme: {
 		extend: {
 			colors: {
@@ -25,4 +41,4 @@ module.exports = {
 	},
 },
 	plugins: [],
-}
+};
